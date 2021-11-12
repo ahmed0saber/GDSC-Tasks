@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <p>REACH OUT TO US...</p>
+    <hr>
+    <p>If you have any enquiry, please complete the following form below</p>
+    
+    <form method="post" action="/">
+        <label for="name">NAME</label><br>
+        <input type="text" name="name" required><br><br>
+        
+        <label for="company">COMPANY</label><br>
+        <input type="text" name="company" required><br><br>
+
+        <label for="email">EMAIL</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label for="phone">TELEPHONE</label><br>
+        <input type="tel" name="phone" required><br><br>
+
+        <label for="address">ADDRESS</label><br>
+        <textarea name="address" required></textarea><br><br>
+
+        <label for="city">CITY</label><br>
+        <input type="text" name="city" required><br><br>
+
+        <label for="country">COUNTRY</label><br>
+        <input type="text" name="country" required><br><br>
+
+        <label for="code">POSTCODE/ZIPCODE</label><br>
+        <input type="text" name="code" size="10" required><br><br>
+
+        <label for="select">PLEASE SPECIFY THE NATURE OF YOUR ENQUIRY</label><br>
+        <select name="select" required>
+            <option>Please select</option>
+            <option value="sales">Sales</option>
+            <option value="procurement">Procurement</option>
+            <option value="technical support">Technical Support</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="enquiry">ENQUIRY</label><br>
+        <textarea name="enquiry" required></textarea><br><br>
+
+        <b>AREAS OF INTEREST</b><br>
+
+        <input type="checkbox" name="interests" value="products">
+        <label for="interests">Products</label><br>
+
+        <input type="checkbox" name="interests" value="careers">
+        <label for="interests">Careers</label><br>
+
+        <input type="checkbox" name="interests" value="financial news">
+        <label for="interests">Financial News</label><br><br>
+
+        <small>MARKETING PREFERENCES</small><br>
+
+        <input type="radio" name="preference" value="true" required>
+        <label for="preference">Please notify me about news, events, offers and promotions from Ezz Steel</label><br>
+
+        <input type="radio" name="preference" value="false" required>
+        <label for="preference">Do NOT notify me about news, events, offers and promotions from Ezz Steel</label><br>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
