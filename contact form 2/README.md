@@ -1,2 +1,2 @@
 # View this project at
-https://ahmed0saber.github.io/GDSC-Tasks/Contact%20Form%202/index.html
+https://ahmed0saber.github.io/GDSC-Tasks/contact%20form%202/index.html
