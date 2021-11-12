@@ -8,7 +8,7 @@
 # Assiut University
 - An Egyptian university
 # About me
-!["MyPicture"]("https://drive.google.com/uc?id=1LerskcCbdpHcbnCKzKUoW0AcqtuRJoj5&export=download")
+![MyPicture](https://drive.google.com/uc?id=1LerskcCbdpHcbnCKzKUoW0AcqtuRJoj5&export=download)
 
 - **Ahmed Saber Fathy**
 - *Full Stack Web Developer*
