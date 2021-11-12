@@ -11,6 +11,6 @@ An Egyptian university
 ![MyPicture](https://avatars.githubusercontent.com/u/64714761?s=96&v=4)
 
 - **Ahmed Saber Fathy**
-- *A Full Stack Web Developer*
+- *Full Stack Web Developer*
 # Learn
 - [README.md file formatting](https://www.markdownguide.org/basic-syntax/).
