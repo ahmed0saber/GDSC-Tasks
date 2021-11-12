@@ -9,7 +9,7 @@
 - An Egyptian university
 # About me
 <p align="center">
-  <img width="150" height="150" alt="MyPicture" src="https://drive.google.com/uc?id=1LerskcCbdpHcbnCKzKUoW0AcqtuRJoj5&export=download">
+  <img width="200" height="200" alt="MyPicture" src="https://drive.google.com/uc?id=1LerskcCbdpHcbnCKzKUoW0AcqtuRJoj5&export=download">
 </p>
 
 - **Ahmed Saber Fathy**
