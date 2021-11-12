@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="username">Enter your username:</label><br>
+            <input type="text" name="username" size="12" required><br><br>
+            
+            <label for="email">Enter your Email:</label><br>
+            <input type="email" name="email" value="ahmed0saber33@gmail.com" disabled><br><br>
+
+            <label for="password">Enter your Password:</label><br>
+            <input type="password" name="password"><br><br>
+
+            <label>Choose your Gender</label><br>
+            <input type="radio" name="gender" value="male">
+            <label>Male</label>
+            <input type="radio" name="gender" value="female">
+            <label>Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <input type="text" name="company" placeholder="Company Name"><br><br>
+            
+            <label>From:</label>
+            <input type="date" name="form"><br><br>
+            <label>To:</label>
+            <input type="date" name="form"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Job Application</legend>
+            <label>Please upload your CV:</label>
+            <input type="file" name="cv"><br><br>
+
+            <label>Job Type:</label>
+            <input type="checkbox" name="jobtype" value="full">
+            <label>Full Time</label>
+            <input type="checkbox" name="jobtype" value="part">
+            <label>Part Time</label>
+            <input type="checkbox" name="jobtype" value="full">
+            <label>Internship</label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
