@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <p id="heading"><span id="s1">REACH</span> <span id="s2">OUT</span> <span id="s3">TO</span> <span id="s4">US</span></p>
+        <p class="space-top">If you have any enquiry, please complete the following form below</p>
+        
+        <form method="post" action="/">
+            <label for="name">NAME</label><br>
+            <input type="text" class="txt" name="name" required><br><br>
+            
+            <label for="company">COMPANY</label><br>
+            <input type="text" class="txt" name="company" required><br><br>
+
+            <label for="email">EMAIL</label><br>
+            <input type="email" class="txt" name="email" required><br><br>
+
+            <label for="phone">TELEPHONE</label><br>
+            <input type="tel" class="txt" name="phone" required><br><br>
+
+            <label for="address">ADDRESS</label><br>
+            <textarea name="address" required></textarea><br><br>
+            <hr>
+
+            <label for="city">CITY</label><br>
+            <input type="text" class="txt" name="city" required><br><br>
+
+            <label for="country">COUNTRY</label><br>
+            <input type="text" class="txt" name="country" required><br><br>
+
+            <label for="code">POSTCODE/ZIPCODE</label><br>
+            <input type="text" class="postcode" name="code" size="10" required><br><br>
+
+            <label for="select">PLEASE SPECIFY THE NATURE OF YOUR ENQUIRY</label><br>
+            <select name="select" required>
+                <option>Please select</option>
+                <option value="sales">Sales</option>
+                <option value="procurement">Procurement</option>
+                <option value="technical support">Technical Support</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="enquiry">ENQUIRY</label><br>
+            <textarea name="enquiry" required></textarea><br><br>
+            <hr>
+
+            <p class="space-top"><b>AREAS OF INTEREST</b></p>
+
+            <input type="checkbox" name="interests" value="products">
+            <label for="interests">Products</label><br>
+
+            <input type="checkbox" name="interests" value="careers">
+            <label for="interests">Careers</label><br>
+
+            <input type="checkbox" name="interests" value="financial news">
+            <label for="interests">Financial News</label><br><br>
+
+            <p class="space-top">MARKETING PREFERENCES</p>
+
+            <input type="radio" name="preference" value="true" required>
+            <label for="preference">Please notify me about news, events, offers and promotions from Ezz Steel</label><br>
+
+            <input type="radio" name="preference" value="false" required>
+            <label for="preference">Do NOT notify me about news, events, offers and promotions from Ezz Steel</label><br>
+
+            <br>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
