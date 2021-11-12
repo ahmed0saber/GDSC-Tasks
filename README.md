@@ -8,14 +8,10 @@
 # Assiut University
 - An Egyptian university
 # About me
-![MyPicture](https://avatars.githubusercontent.com/u/64714761?s=96&v=4)
-
+<p align="center">
+  <img width="300" height="300" alt="MyPicture" src="https://avatars.githubusercontent.com/u/64714761?s=96&v=4">
+</p>
 - **Ahmed Saber Fathy**
 - *Full Stack Web Developer*
 # Learn
 - [README.md file formatting](https://www.markdownguide.org/basic-syntax/).
-
-
-<p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
-</p>
