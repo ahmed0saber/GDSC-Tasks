@@ -4,8 +4,9 @@
     font-family: sans-serif;
 }
 body{
-    background-color: #eee;
-    padding: 15px 15px;
+    padding: 12px 12px;
+    background: #eee url("./bg-img.jpg") no-repeat fixed left top;
+    background-size: cover;
 }
 .container{
     width: fit-content;
@@ -14,72 +15,65 @@ body{
     padding: 25px;
     border: 1px solid #0001;
     border-radius: 6px;;
-    box-shadow: 0px 0px 3px 3px #0003;
+    box-shadow: 0px 0px 5px 4px #0005;
 }
 #heading{
-    border-bottom: 4px dotted rgba(0,0,0,0.6);
-    margin: 10px 0px;
+    border-bottom: 4px dashed rgba(0,100,100,0.9);
+    margin: 0px 0px 10px 0px;
     font-size: 30px;
-    -webkit-text-stroke: 0.8px #0005;
-}
-#s1{
-    color: #f00;
-}
-#s2{
-    color: #ff0;
-}
-#s3{
-    color: #0f0;
-}
-#s4{
-    color: #00f;
+    font-weight: bold;
+    color: #099;
+    text-shadow: 0px 0px 1px #000;
+    letter-spacing: 1px;
+    display: inline-block;
+    letter-spacing: 0px;
+    word-spacing: 2px;
 }
 .space-top{
-    padding: 7px 0px;
-    font-size: 22px;
-    text-shadow: 0px 0px 2px #0004;
-    color: #d00;
+    padding: 7px 0px 14px 0px;
+    font-size: 16px;
+    text-shadow: 0px 0px 1px #000;
+    color: #000;
+}
+.italic{
+    font-style: italic;
+}
+form .txt , form .postcode , form textarea , form select{
+    border-radius: 4px;
+    border: 1px solid #055;
+    font-size: 18px;
 }
 form .txt{
     width: calc(100% - 16px);
     height: 32px;
     padding: 0px 8px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid #00a8;
 }
 form .postcode{
     width: calc(40% - 10px);
     height: 34px;
     padding: 0px 5px;
     font-size: 20px;
-    border-radius: 5px;
-    border: 1px solid #00a8;
 }
 form textarea{
     width: calc(100% - 12px);
     height: 200px;
     padding: 6px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid #00a8;
 }
 form select{
     width: calc(100% + 2px);
     height: 36px;
     padding: 0px 10px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid #00a8;
 }
 label{
-    color: #00c;
-    font-weight: 600;
+    color: #000;
+    font-size: 14px;
+    text-shadow: 0px 0px 0.6px #000;
+    /*font-weight: bold;*/
 }
 hr{
     margin: 10px 0px;
     width: 100%;
-    border: 1px solid #0005;
+    border: 1px dotted #000;
 }
 input[type="checkbox"] , input[type="radio"]{
     margin: 0px 2px 0px 12px;
@@ -87,10 +81,10 @@ input[type="checkbox"] , input[type="radio"]{
 .btn{
     padding: 12px;
     width: 36%;
-    font-size: 24px;
-    background-color: #00e;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #077;
     color: #fff;
-    border: 2px dashed #0009;
-    border-radius: 8px;
-    margin-left: 32%;
+    border: 4px double #fff;
+    border-radius: 6px;
 }
