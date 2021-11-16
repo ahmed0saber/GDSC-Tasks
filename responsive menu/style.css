@@ -1,0 +1,79 @@
+/* Task about:-
+1) z-index
+2) position
+3) font
+4) box-sizing
+5) media query */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #E5EBEA;
+}
+h1{
+    text-align: center;
+    padding: 5px;
+    background-color: #C5CBCA;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.item{
+    position: relative;
+    background-color: #730071;
+    width: calc(100% / 3);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px 20px 5px 5px;
+    color: #E5EBEA;
+    box-sizing: border-box; /*(4)*/
+}
+.second-item{
+    background-color: #3943B7;
+}
+.third-item{
+    background-color: #6B2737;
+}
+.name{
+    position: absolute; /*(2)*/
+    right: 0;
+    top: 0;
+    background-color: #390040;
+    font: italic 600 20px sans-serif; /*(3)*/
+    padding: 4px 14px 4px 6px;
+    margin: 6px;
+    border-radius: 5px 20px 5px 5px;
+    z-index: 1; /*(1) if z-index is less than 0 , name will be behind item*/
+}
+.second-name{
+    background-color: #091387;
+}
+.third-name{
+    background-color: #3B0017;
+}
+.description{
+    padding: 32px 2px 2px 2px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*(5)*/
+@media screen and (max-width: 1000px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .item{
+        width: calc((100% / 2) - 16px);
+        margin: 8px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .item{
+        width: calc((100%) - 12px);
+        margin: 6px;
+    }
+}
