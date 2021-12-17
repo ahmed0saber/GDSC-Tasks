@@ -1,0 +1,86 @@
+*{
+    font-family: "Bree Serif",sans-serif;
+}
+.navbar{
+    padding: 8px 12px;
+}
+.navbar-brand{
+    font-size: 22px;
+}
+.navbar-text a, footer a{
+    text-decoration: none;
+}
+#home{
+    background: #f2f2f2 url(../images/home.jpg) no-repeat top left;
+    background-size: cover;
+    height: 100vh;
+}
+.onImg{
+    background-color: #12121259;
+    width: fit-content;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+.onImg h1, .onImg p{
+    color: #e5e9ec;
+}
+.icons li a{
+    margin: 8px;
+    font-size: 30px;
+    color: #e5e9ec;
+}
+.icons li a:hover{
+    color: #c3c3c3;
+}
+.myPic{
+    width: 100%;
+    transition-duration: 0.3s;
+}
+.myPic:hover{
+    transform: scale(1.04);
+}
+.skill, .cert{
+    border: 1px solid #DEE2E6;
+}
+.skill:hover, .cert:hover{
+    border: 1px solid #a3a3a3;
+}
+.hidden{
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.project-container{
+    background-color: #DEE2E6;
+    padding: 1px;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+}
+.project{
+    min-height: 300px;
+    transition-duration: 0.4s;
+    background: #f2f2f2 no-repeat left top;
+    background-size: cover;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+}
+.project:hover .hidden{
+    opacity: 1;
+    transform: scale(0.8);
+}
+.project:hover{
+    transform: scale(1.2);
+}
+.projects-header::before{
+    content: "</";
+}
+.projects-header::after{
+    content: ">";
+}
+.skill-img{
+    height: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    #home{
+        background: #f2f2f2 url(../images/home2.jpg) no-repeat top left;
+        background-size: cover;
+    }
+}
