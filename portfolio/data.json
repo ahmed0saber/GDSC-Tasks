@@ -32,7 +32,7 @@
             "id": "5",
             "title": "Puzzle 2048",
             "description": "A game created by me, supported by leaderboard API which is created by Ahmed Yasser.",
-            "url": "https://ahmed0saber.github.io/ehrth/puzzle2048remade.html",
+            "url": "https://ahmed0saber.github.io/puzzle-2048/",
             "img": "./images/projects/p2.png"
         },
         {
@@ -62,6 +62,13 @@
             "description": "A technical documentation or tutorial for C# programming language basics.",
             "url": "https://ahmed0saber.github.io/freecodecamp-tasks/technical%20documentation/",
             "img": "./images/projects/td.png"
+        },
+        {
+            "id": "10",
+            "title": "Live Code Editor",
+            "description": "A Live Code Editor for Web Development with HTML, CSS, JavaScript.",
+            "url": "https://ahmed0saber.github.io/bootstrap-projects/live%20web%20code%20editor/",
+            "img": "./images/projects/lce.png"
         }
     ],
     [
