@@ -2,7 +2,7 @@
     font-family: "Bree Serif",sans-serif;
 }
 /*body{
-    overflow-x: hidden;
+    background-color: #000;
 }*/
 .navbar{
     padding: 8px 12px;
@@ -28,6 +28,23 @@
     color: #f9fdff;
     text-shadow: 0px 0px 2px #000;
 }
+.onImg p{
+    display: inline-block;
+    padding: 0px 2px 0px 0px;
+    overflow: hidden;
+    border-right: .15em solid #f9fdff00;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3s steps(40, end),blink-caret 1s step-end 2;
+}
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: #f9fdff;}
+}
 .icons li a{
     margin: 8px;
     font-size: 30px;
@@ -39,23 +56,62 @@
 }
 .onImg .btn{
     margin-top:10px;
+    padding: 8px 18px;
     box-shadow: 0px 0px 6px 2px #0005;
+    background: linear-gradient(-45deg, #309c42, #2ba9b3, #0a64ad, #1eb692);
+	background-size: 500% 500%;
+	animation: gradient 6s alternate infinite;
+    border: 1px solid #12121208;
+}
+@keyframes gradient {
+	0% {
+		background-position: 1% 50%;
+	}
+	50% {
+		background-position: 99% 50%;
+	}
+	100% {
+		background-position: 1% 50%;
+	}
+}
+.semi-transparent{
+    background-color: #F8F9FAE2;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
 .myPic{
     width: 100%;
+    animation: zooming 1.2s alternate infinite;
     transition-duration: 0.3s;
 }
+@keyframes zooming {
+    from {transform: scale(1.04);}
+    to {transform: scale(1);}
+}
 .myPic:hover{
+    animation: none;
     transform: scale(1.04);
 }
-.skill, .cert, .serv, .goals{
-    border: 1px solid #DEE2E6;
-    background-color: #F8F9FA;
+.skill, .cert{
+    border: 2px solid #DEE2E6;
+    background-color: #F8F9FA92;
     transition-duration: 0.4s;
 }
-.skill:hover, .cert:hover, .serv:hover, .goals:hover{
-    border: 1px solid #a3a3a3;
-    background-color: #fefefe;
+.serv, .goals{
+    border: 2px solid #DEE2E6;
+    transition-duration: 0.4s;
+}
+.serv h3{
+    border-left: 4px solid #098d8d;
+    border-radius: 2px;
+}
+.goals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.skill:hover, .cert:hover, .goals:hover, .serv:hover{
+    border: 2px solid #999;
 }
 .hidden{
     opacity: 0;
@@ -95,10 +151,10 @@
     overflow-x: scroll;
     overflow-y: hidden;
 }
-.scroller::-webkit-scrollbar {height: 12px;}
-.scroller::-webkit-scrollbar-track {background: #ccc;border: none;}
+.scroller::-webkit-scrollbar {height: 14px;}
+.scroller::-webkit-scrollbar-track {background: #ccc;border: none;border: 2px solid #0003;}
 .scroller::-webkit-scrollbar-track:hover {background: #bbb;}
-.scroller::-webkit-scrollbar-thumb {background: #0a64ad;}
+.scroller::-webkit-scrollbar-thumb {background: #1a73bd;border: 2px solid #0003;}
 .scroller::-webkit-scrollbar-thumb:hover {background: #00589E;}
 #arrow{
     position: absolute;
@@ -130,6 +186,27 @@
 }
 .MyVoice{
     width: 100%;
+}
+.con{
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.con canvas {
+    width: 100vw;
+    height: 300px;
+    border: 2px solid #12121227;
+}
+.con p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    color: #080808;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {
