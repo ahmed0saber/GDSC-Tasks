@@ -49,24 +49,28 @@ function theme(){
     document.querySelector(':root').style.setProperty('--pri',themes[current].pri);
     document.querySelector(':root').style.setProperty('--sec',themes[current].sec);
     document.querySelector(':root').style.setProperty('--font',themes[current].font);
-}
-function changeTheme(){
-    if(current==themes.length-1){
-      current=0;
-      nav.classList.add("navbar-light");
-      nav.classList.add("bg-light");
-      nav.classList.remove("navbar-dark");
-      nav.classList.remove("bg-dark");
-    }else
-    {
-      current+=1;
+    if(current>=themes.length-1){
       nav.classList.remove("navbar-light");
       nav.classList.remove("bg-light");
       nav.classList.add("navbar-dark");
       nav.classList.add("bg-dark");
-    }
-    localStorage.setItem("theme", current);
-    theme();
+  }else
+  {
+      nav.classList.add("navbar-light");
+      nav.classList.add("bg-light");
+      nav.classList.remove("navbar-dark");
+      nav.classList.remove("bg-dark");
+  }
+}
+function changeTheme(){
+  if(current>=themes.length-1){
+      current=0;
+  }else
+  {
+      current+=1;
+  }
+  localStorage.setItem("theme", current);
+  theme();
 }
 /*     BACKGROUND ANIMATION     */
 var canvas = document.createElement("canvas");
