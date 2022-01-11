@@ -67,7 +67,7 @@ function theme(){
     document.querySelector(':root').style.setProperty('--pri',themes[current].pri);
     document.querySelector(':root').style.setProperty('--sec',themes[current].sec);
     document.querySelector(':root').style.setProperty('--font',themes[current].font);
-    if(current==themes.length-1){
+    if(current>=themes.length-1){
         nav.classList.remove("navbar-light");
         nav.classList.remove("bg-light");
         nav.classList.add("navbar-dark");
@@ -81,7 +81,7 @@ function theme(){
     }
 }
 function changeTheme(){
-    if(current==themes.length-1){
+    if(current>=themes.length-1){
         current=0;
     }else
     {
